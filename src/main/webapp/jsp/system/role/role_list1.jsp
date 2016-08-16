@@ -231,11 +231,11 @@
 		
 		<script type="text/javascript">
 		
-		$(window.parent.hangge());
+		$(window.parent.parent.hangge());
 		
 		//新增部门
 		function addRole(){
-			 window.parent.jzts();
+			 window.parent.parent.jzts();
 			 var diag = new top.Dialog();
 			 diag.Drag=true;
 			 diag.Title ="新增部门";
@@ -244,7 +244,7 @@
 			 diag.Height = 90;
 			 diag.CancelEvent = function(){ //关闭事件
 				 if(diag.innerFrame.contentWindow.document.getElementById('zhongxin').style.display == 'none'){
-					window.parent.jzts();
+					window.parent.parent.jzts();
 					setTimeout("self.location.reload()",100);
 				}
 				diag.close();
@@ -254,7 +254,7 @@
 		
 		//新增职位
 		function addRole2(pid){
-			 window.parent.jzts();
+			 window.parent.parent.jzts();
 			 var diag = new top.Dialog();
 			 diag.Drag=true;
 			 diag.Title ="新增职位";
@@ -263,7 +263,7 @@
 			 diag.Height = 90;
 			 diag.CancelEvent = function(){ //关闭事件
 				if(diag.innerFrame.contentWindow.document.getElementById('zhongxin').style.display == 'none'){
-					window.parent.jzts();
+					window.parent.parent.jzts();
 					setTimeout("self.location.reload()",100);
 				}
 				diag.close();
@@ -273,7 +273,7 @@
 		
 		//修改
 		function editRole(ROLE_ID){
-			 window.parent.jzts();
+			 window.parent.parent.jzts();
 			 var diag = new top.Dialog();
 			 diag.Drag=true;
 			 diag.Title ="编辑";
@@ -282,7 +282,7 @@
 			 diag.Height = 90;
 			 diag.CancelEvent = function(){ //关闭事件
 				 if(diag.innerFrame.contentWindow.document.getElementById('zhongxin').style.display == 'none'){
-					window.parent.jzts();
+					window.parent.parent.jzts();
 					setTimeout("self.location.reload()",100);
 				}
 				diag.close();
@@ -298,10 +298,10 @@
 					$.get(url,function(data){
 						if(data=="success"){
 							if(msg == 'c'){
-								window.parent.jzts();
+								window.parent.parent.jzts();
 								document.location.reload();
 							}else{
-								window.parent.jzts();
+								window.parent.parent.jzts();
 								window.location.href="role.do";
 							}
 							
@@ -481,7 +481,7 @@
 		
 		//菜单权限
 		function editRights(ROLE_ID){
-			 window.parent.jzts();
+			 window.parent.parent.jzts();
 			 var diag = new top.Dialog();
 			 diag.Drag = true;
 			 diag.Title = "菜单权限";
@@ -496,7 +496,7 @@
 		
 		//按钮权限
 		function roleButton(ROLE_ID,msg){
-			window.parent.jzts();
+			window.parent.parent.jzts();
 			if(msg == 'add_qx'){
 				var Title = "授权新增权限";
 			}else if(msg == 'del_qx'){

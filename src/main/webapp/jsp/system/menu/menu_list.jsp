@@ -35,11 +35,11 @@
 		<!--引入弹窗组件end-->
 		
 <script type="text/javascript">
-	$(window.parent.hangge());	
+	$(window.parent.parent.hangge());	
 	
 	//新增
 	function addmenu(){
-		 window.parent.jzts();
+		 window.parent.parent.jzts();
 		 var diag = new top.Dialog();
 		 diag.Drag=true;
 		 diag.Title ="新增菜单";
@@ -48,7 +48,7 @@
 		 diag.Height = 256;
 		 diag.CancelEvent = function(){ //关闭事件
 			if(diag.innerFrame.contentWindow.document.getElementById('zhongxin').style.display == 'none'){
-				window.parent.jzts(); 
+				window.parent.parent.jzts(); 
 				setTimeout("location.reload()",100);
 			}
 			diag.close();
@@ -58,7 +58,7 @@
 	
 	//修改
 	function editmenu(menuId){
-		 window.parent.jzts();
+		 window.parent.parent.jzts();
 	   	 var diag = new top.Dialog();
 		 diag.Drag=true;
 		 diag.Title ="编辑菜单";
@@ -67,7 +67,7 @@
 		 diag.Height = 256;
 		 diag.CancelEvent = function(){ //关闭事件
 			if(diag.innerFrame.contentWindow.document.getElementById('zhongxin').style.display == 'none'){
-				window.parent.jzts(); 
+				window.parent.parent.jzts(); 
 				setTimeout("location.reload()",100);
 			}
 			diag.close();
@@ -77,7 +77,7 @@
 	
 	//编辑顶部菜单图标
 	function editTb(menuId){
-		 window.parent.jzts();
+		 window.parent.parent.jzts();
 	   	 var diag = new top.Dialog();
 		 diag.Drag=true;
 		 diag.Title ="编辑图标";
@@ -86,7 +86,7 @@
 		 diag.Height = 150;
 		 diag.CancelEvent = function(){ //关闭事件
 			if(diag.innerFrame.contentWindow.document.getElementById('zhongxin').style.display == 'none'){
-				window.parent.jzts(); 
+				window.parent.parent.jzts(); 
 				setTimeout("location.reload()",100);
 			}
 			diag.close();
@@ -108,7 +108,7 @@
 		if(flag){
 			var url = "<%=basePath%>/menu/del.do?MENU_ID="+menuId+"&guid="+new Date().getTime();
 			$.get(url,function(data){
-				window.parent.jzts();
+				window.parent.parent.jzts();
 				document.location.reload();
 			});
 		}

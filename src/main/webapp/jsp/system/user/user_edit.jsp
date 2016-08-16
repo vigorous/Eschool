@@ -36,7 +36,7 @@
 	
 		
 <script type="text/javascript">
-	$(window.parent.hangge());
+	$(window.parent.parent.hangge());
 	$(document).ready(function(){
 		if($("#user_id").val()!=""){
 			$("#loginname").attr("readonly","readonly");

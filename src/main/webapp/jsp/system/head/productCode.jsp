@@ -47,7 +47,7 @@
 		</style>
 		
 <script type="text/javascript">
-	$(window.parent.hangge());
+	$(window.parent.parent.hangge());
 	
 	//生成
 	function save(){
@@ -122,7 +122,7 @@
             bg:'#AE81FF',
             time:9
         });
-		window.parent.jzts();
+		window.parent.parent.jzts();
 		setTimeout("top.Dialog.close()",10000);
 		
 	}

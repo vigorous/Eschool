@@ -48,7 +48,7 @@
 		
 		<script type="text/javascript">
 			
-			$(window.parent.hangge());
+			$(window.parent.parent.hangge());
 			//发送
 			function sendSms(){
 				

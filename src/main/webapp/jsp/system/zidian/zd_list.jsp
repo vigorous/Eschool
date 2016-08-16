@@ -46,7 +46,7 @@
 		
 <script type="text/javascript">
 	
-	$(window.parent.hangge());
+	$(window.parent.parent.hangge());
 	
 	$(function() {
 		
@@ -65,7 +65,7 @@
 	});
 	//新增
 	function add(PARENT_ID){
-		 window.parent.jzts();
+		 window.parent.parent.jzts();
 		 var diag = new top.Dialog();
 		 diag.Drag=true;
 		 diag.Title ="新增";
@@ -76,7 +76,7 @@
 			 if(diag.innerFrame.contentWindow.document.getElementById('zhongxin').style.display == 'none'){
 				var num = '${page.currentPage}';
 			 	if(num == '0'){
-			 		window.parent.jzts();
+			 		window.parent.parent.jzts();
 			 		location.href = location.href;
 			 	}else{
 			 		nextPage('${page.currentPage}');
@@ -89,7 +89,7 @@
 	
 	//修改
 	function edit(ZD_ID){
-		 window.parent.jzts();
+		 window.parent.parent.jzts();
 	   	 var diag = new top.Dialog();
 		 diag.Drag=true;
 		 diag.Title ="编辑";

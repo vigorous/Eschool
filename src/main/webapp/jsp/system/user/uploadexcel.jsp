@@ -100,7 +100,7 @@
 		<!--提示框-->
 		<script type="text/javascript" src="js/jquery.tips.js"></script>
 		<script type="text/javascript">
-		$(window.parent.hangge());
+		$(window.parent.parent.hangge());
 		$(function() {
 			//上传
 			$('#excel').ace_file_input({

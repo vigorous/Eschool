@@ -188,17 +188,17 @@
 		<script type="text/javascript" src="js/jquery.tips.js"></script><!--提示框-->
 		<script type="text/javascript">
 		
-		$(window.parent.hangge());
+		$(window.parent.parent.hangge());
 		
 		//检索
 		function search(){
-			window.parent.jzts();
+			window.parent.parent.jzts();
 			$("#Form").submit();
 		}
 		
 		//新增
 		function add(){
-			 window.parent.jzts();
+			 window.parent.parent.jzts();
 			 var diag = new top.Dialog();
 			 diag.Drag=true;
 			 diag.Title ="新增";
@@ -208,7 +208,7 @@
 			 diag.CancelEvent = function(){ //关闭事件
 				 if(diag.innerFrame.contentWindow.document.getElementById('zhongxin').style.display == 'none'){
 					 if('${page.currentPage}' == '0'){
-						 window.parent.jzts();
+						 window.parent.parent.jzts();
 						 setTimeout("self.location.reload()",100);
 					 }else{
 						 nextPage(${page.currentPage});
@@ -221,7 +221,7 @@
 		
 		//修改
 		function edit(Id){
-			 window.parent.jzts();
+			 window.parent.parent.jzts();
 			 var diag = new top.Dialog();
 			 diag.Drag=true;
 			 diag.Title ="编辑";

@@ -163,7 +163,7 @@
 		
 		
 		<script type="text/javascript">
-			$(window.parent.hangge());
+			$(window.parent.parent.hangge());
 			
 			$(function() {
 				

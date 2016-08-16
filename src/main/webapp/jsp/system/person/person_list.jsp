@@ -344,19 +344,12 @@
 			 diag.Width = 450;
 			 diag.Height = 355;
 			 diag.CancelEvent = function(){ //关闭事件
-				 alert(1);
 				 if(diag.innerFrame.contentWindow.document.getElementById('zhongxin').style.display == 'none'){
-					 alert(2);
 					 if('${page.currentPage}' == '0'){
 						 window.parent.parent.jzts();
-						 alert(6);
 						 setTimeout("self.location.reload()",100);
-						 alert(3);
 					 }else{
-						 alert(4);
-						 alert(${page.currentPage});
 						 nextPage('${page.currentPage}');
-						 alert(5);
 					 }
 				}
 				diag.close();

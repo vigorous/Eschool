@@ -149,7 +149,7 @@ public class Page {
 
 			// 调整每页显示条数
 			sb.append("function changeCount(value){");
-			sb.append(" window.parent.jzts();");
+			sb.append(" window.parent.parent.jzts();");
 			sb.append("	if(true && document.forms[0]){\n");
 			sb.append("		var url = document.forms[0].getAttribute(\"action\");\n");
 			sb.append("		if(url.indexOf('?')>-1){url += \"&"

@@ -224,7 +224,7 @@
 		type="text/javascript"></script>
 		<script src="uploadify/swfobject.js" type="text/javascript"></script>
 		<script type="text/javascript">
-		$(window.parent.hangge());
+		$(window.parent.parent.hangge());
 		$(function() {
 			
 			//单选框

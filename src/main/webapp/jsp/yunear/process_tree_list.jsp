@@ -160,7 +160,7 @@
 		<!-- inline scripts related to this page -->
 		<script type="text/javascript">
 		
-		 $(window.parent.hangge());
+		 $(window.parent.parent.hangge());
 		 $(function() {
 			var sampleData = initiateDemoData();//see below
 		

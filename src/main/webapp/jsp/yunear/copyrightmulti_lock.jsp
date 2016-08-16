@@ -190,7 +190,7 @@
 	<script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
 	<!-- 日期框 -->
 	<script type="text/javascript">
-		$(window.parent.hangge());
+		$(window.parent.parent.hangge());
 
 		</script>
 </body>

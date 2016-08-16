@@ -29,7 +29,7 @@
 		<!--提示框-->
 		<script type="text/javascript" src="js/jquery.tips.js"></script>
 		<script type="text/javascript">
-			$(window.parent.hangge());	
+			$(window.parent.parent.hangge());	
 			$(document).ready(function(){
 					if($("#menuId").val()!=""){
 						var parentId = $("#pId").val();

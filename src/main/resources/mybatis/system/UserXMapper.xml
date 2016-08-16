@@ -110,7 +110,7 @@
 			"SYS_USER"
 		where 
 			"EMAIL" = #{EMAIL}
-		<if test="pd.USERNAME != null and pd.USERNAME != ''">
+		<if test="USERNAME != null and USERNAME != ''">
 			and "USERNAME" != #{USERNAME} 
 		</if>
 	</select>

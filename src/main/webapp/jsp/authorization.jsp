@@ -54,7 +54,7 @@ footer {
 	<script type="text/javascript" src="js/zTree/jquery.ztree-2.6.min.js"></script>
 
 	<script type="text/javascript">
-		$(window.parent.hangge());
+		$(window.parent.parent.hangge());
 		var zTree;
 		$(document).ready(function() {
 

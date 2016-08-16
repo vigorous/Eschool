@@ -243,7 +243,7 @@
 		<!-- 编辑框-->
 		
 		<script type="text/javascript">
-		$(window.parent.hangge());
+		$(window.parent.parent.hangge());
 		//ueditor纯文本
 		function getContentTxt() {
 		    var arr = [];

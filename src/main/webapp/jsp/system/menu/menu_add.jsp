@@ -33,7 +33,7 @@
 </head>
 
 <script type="text/javascript">
-	$(window.parent.hangge());
+	$(window.parent.parent.hangge());
 	$(document).ready(function(){		
 		if($("#menuId").val()!=""){
 			var parentId = "${menu.parentId}";

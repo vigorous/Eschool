@@ -29,7 +29,7 @@
 
 		<script type="text/javascript">
 				
-				$(window.parent.hangge());
+				$(window.parent.parent.hangge());
 				//保存
 				function save(){
 					if($("#MENU_ICON").val()==""){
